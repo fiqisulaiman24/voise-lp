@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voise Over &mdash; Find Your Voice Actor</title>
+    <!-- Bulma Main -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Own Style -->
+    <link rel="stylesheet" href="css/voise.css">
+    <!-- Icofont -->
+    <link rel="stylesheet" href="lib/icofont/icofont.min.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="hero is-fullheight is-black voise__hero">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item voise__logo">
+                Voise
+              </a>
+              <span class="navbar-burger has-text-white" onclick="openNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item">
+                  Find Your Voices
+                </a>
+
+                <a class="navbar-item">
+                  Post Audition
+                </a>
+
+                <a class="navbar-item">
+                  Book Studio
+                </a>
+
+                <a class="navbar-item">
+                  About Us
+                </a>
+
+                <a class="navbar-item">
+                  Contact Us
+                </a>
+
+                <a class="navbar-item">
+                  Sign in
+                </a>
+              </div>
+            </div>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+              <!-- Button to close the overlay navigation -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <!-- Overlay content -->
+              <div class="overlay-content">
+                <a href="#">Find Your Voices</a>
+                <a href="#">Post Audition</a>
+                <a href="#">Book Studio</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Sign in</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title voise__hero__headline">
+            Hire Professional<br class="is-hidden-mobile">
+            Voice-over Talent
+          </h1>
+
+          <p class="subtitle voise__hero__tagline">
+            Voise voice-over is the most respected online voice-over<br class="is-hidden-mobile">
+            casting site designed specifically for ad agencies, producers<br class="is-hidden-mobile">
+            and marketing professionals.
+          </p>
+
+          <a href="#" class="button voise__cta__btn">
+            <span>Get Started Now</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <div class="container">
+          <div class="columns is-multiline voise__hero__brand">
+            <div class="column is-2">
+              <i class="icofont-brand-espn icofont-5x"></i>
+            </div>
+
+            <div class="column is-2">
+              <i class="icofont-brand-disney icofont-5x"></i>
+            </div>
+
+            <div class="column is-2">
+              <i class="icofont-brand-google icofont-5x"></i>
+            </div>
+
+            <div class="column is-2">
+              <i class="icofont-brand-netflix icofont-5x"></i>
+            </div>
+
+            <div class="column is-2">
+              <i class="icofont-brand-verizon icofont-5x"></i>
+            </div>
+
+            <div class="column is-2">
+              <i class="icofont-brand-gizmodo icofont-5x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container has-text-centered">
+        <h2 class="title voise__about__head">
+          How Voise casting suite works
+        </h2>
+
+        <div class="columns is-multiline voise__about__columns">
+          <div class="column is-4">
+            <div class="voise__about__bg">
+              <i class="icofont-record"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__about__title">Post your voice-over job for free</h4>
+              <p class="subtitle voise__about__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="voise__about__bg">
+              <i class="icofont-music"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__about__title">Receive Professional Audition</h4>
+              <p class="subtitle voise__about__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="voise__about__bg">
+              <i class="icofont-star"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__about__title">Book Our Studio</h4>
+              <p class="subtitle voise__about__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="button voise__about__btn">
+          <span>Get Started Now</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section has-background-light">
+      <div class="container has-text-centered">
+        <h2 class="title voise__casting__head">
+          Voise Casting suite works
+        </h2>
+
+        <div class="columns is-multiline">
+          <div class="column is-4">
+            <figure class="image is-3by2">
+              <img src="img/4.jpg">
+            </figure>
+            <div class="content">
+              <h4 class="title voise__casting__title">Received Audition</h4>
+              <p class="subtitle voise__casting__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <figure class="image is-3by2">
+              <img src="img/5.jpg">
+            </figure>
+            <div class="content">
+              <h4 class="title voise__casting__title">Post Project</h4>
+              <p class="subtitle voise__casting__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <figure class="image is-3by2">
+              <img src="img/6.jpg">
+            </figure>
+            <div class="content">
+              <h4 class="title voise__casting__title">Studio Shot</h4>
+              <p class="subtitle voise__casting__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container has-text-centered">
+        <h2 class="title voise__features__head">
+          Features
+        </h2>
+
+        <div class="columns is-multiline voise__features__columns">
+          <div class="column is-3">
+            <div class="voise__features__bg">
+              <i class="icofont-record"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__features__title">Discount 50%</h4>
+              <p class="subtitle voise__features__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="voise__features__bg">
+              <i class="icofont-music"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__about__title">High Quality Sound</h4>
+              <p class="subtitle voise__about__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="voise__features__bg">
+              <i class="icofont-star"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__about__title">Favorite Studio</h4>
+              <p class="subtitle voise__about__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="voise__features__bg">
+              <i class="icofont-recycle"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__about__title">Nice & Clean</h4>
+              <p class="subtitle voise__about__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-multiline">
+          <div class="column is-3">
+            <div class="voise__features__bg">
+              <i class="icofont-tools-alt-2"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__features__title">Full Tools Equipment</h4>
+              <p class="subtitle voise__features__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="voise__features__bg">
+              <i class="icofont-fast-food"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__about__title">Food & Drinks Bar</h4>
+              <p class="subtitle voise__about__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="voise__features__bg">
+              <i class="icofont-star"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__about__title">High Quality</h4>
+              <p class="subtitle voise__about__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-3">
+            <div class="voise__features__bg">
+              <i class="icofont-tasks"></i>
+            </div>
+            <div class="content">
+              <h4 class="title voise__about__title">Booking System</h4>
+              <p class="subtitle voise__about__sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section has-background-light">
+      <div class="container has-text-centered">
+        <h2 class="title voise__project__head">
+          Our Recent Project and Clients
+        </h2>
+
+        <div class="columns is-multiline voise__project__columns">
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="img/p1.jpg">
+                </figure>
+              </div>
+              <div class="card-content voise__project__content is-overlay">
+                <h4 class="title voise__project__title">The Voice Actor from Pixar Animation Cars</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="img/p2.jpg">
+                </figure>
+              </div>
+              <div class="card-content voise__project__content is-overlay">
+                <h4 class="title voise__project__title">Podcast Discussion with<br>Alexander Mia</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="img/p3.jpg">
+                </figure>
+              </div>
+              <div class="card-content voise__project__content is-overlay">
+                <h4 class="title voise__project__title">The Voice Actor cast from<br>Harry Potter</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="img/p4.jpg">
+                </figure>
+              </div>
+              <div class="card-content voise__project__content is-overlay">
+                <h4 class="title voise__project__title">Video clip in studio with Metalancur Band</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="img/p5.jpg">
+                </figure>
+              </div>
+              <div class="card-content voise__project__content is-overlay">
+                <h4 class="title voise__project__title">Guardian of the galaxy cast<br>from Marvel</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="img/p6.jpg">
+                </figure>
+              </div>
+              <div class="card-content voise__project__content is-overlay">
+                <h4 class="title voise__project__title">The Voice Actor cast from<br>Santa Monica Studio</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container has-text-centered">
+        <h2 class="title voise__testimonial__head">
+          Words From Our Clients
+        </h2>
+
+        <div class="voise__testimonial__company">
+          <div class="content voise__testimonial__content">
+            <!-- Replace with image -->
+            <img src="img/pixar.png" class="voise__testimonial__brand">
+            <p class="voise__testimonial__quote">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+            </p>
+            <!-- Replace with brand name -->
+            <span class="voise__brand__name">
+              Pixar Animation
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-dark voise__foot">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column is-5">
+              <h2 class="title voise__foot__head">
+                Let's Rock Your Next Project
+              </h2>
+              <p class="subtitle voise__foot_sub">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum.
+              </p>
+
+              <a href="#" class="button voise__foot__btn">
+                <span>Contact Us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="voise__footer">
+      <div class="container has-text-centered">
+        <h5 class="voise__footer__text">Created by : Fiqi Sulaiman</h5>
+      </div>
+    </footer>
+    <!-- Jquery -->
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <!-- AOS -->
+    <script type="text/javascript" src="lib/aos/aos.js"></script>
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+    <!-- Main JS -->
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>

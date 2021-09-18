@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-family: 'Poppins',sans-serif;
+}
+
+/* Hero  & Navbar */
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 1); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 5%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: -32px;
+  right: -17px;
+  font-size: 35px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (min-width: 1088px){
+	.navbar-item {
+	    display: flex;
+	    font-size: 14px;
+	    color: #fff;
+	    margin-left: 24px;
+	}
+}
+
+.hero.is-black a.navbar-item:hover, .hero.is-black a.navbar-item.is-active, .hero.is-black .navbar-link:hover, .hero.is-black .navbar-link.is-active {
+    background-color: transparent;
+    color: white;
+}
+
+.navbar-item.voise__logo{
+	margin-left: 0px;
+	font-size: 28px;
+	text-transform: uppercase;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 200;
+	letter-spacing: -2px;
+}
+
+.voise__logo::after{
+	content: "voice-over";
+	font-size: 14px;
+	position: relative;
+	bottom:-4px;
+	left: 3px;
+	text-transform: lowercase;
+	letter-spacing: 0;
+}
+
+.voise__hero{
+	background-image: url('../img/recording.jpg');
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: cover;
+}
+
+.voise__hero__headline{
+	font-size: 52px;
+	padding-bottom: 1rem;
+}
+
+.voise__hero__tagline{
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
+	padding-bottom: 0.50rem;
+}
+
+.button.voise__cta__btn{
+	background-color: #047afd;
+	border: 1px solid #047afd;
+	padding-left: 1.50rem;
+	padding-right: 1.50rem;
+}
+
+.button.voise__cta__btn span{
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.hero-head, .hero-body, .hero-foot{
+	background:rgba(0,0,0,0.7);
+}
+
+.voise__hero__brand{
+	text-align: center;
+}
+
+.voise__hero__brand .column.is-2 > i {
+	color: #808080;
+}
+/* Hero & Navbar */
+
+/* About Section */
+.voise__about__head{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.voise__about__columns{
+	padding-top: 1.50rem;
+	padding-bottom: 1.50rem;
+}
+
+.voise__about__bg{
+	display: block;
+	margin: auto;
+	width:54px;
+	height: 54px;
+	background: #06d763;
+	border-radius: 5px;
+}
+
+.voise__about__bg i {
+	position: relative;
+	top:20%;
+	color: #fff;
+	font-size: 30px;
+}
+
+.title.voise__about__title{
+	margin-top: 1rem;
+	font-size: 16px;
+}
+
+.subtitle.voise__about__sub{
+	text-align: justify-all;
+	font-size: 14px;
+	line-height: 1.5;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.button.voise__about__btn{
+	background-color: #047afd;
+	border: 1px solid #047afd;
+	padding-left: 1.50rem;
+	padding-right: 1.50rem;
+}
+
+.button.voise__about__btn span{
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+}
+/* */
+
+/* Casting Section */
+.voise__casting__head{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.title.voise__casting__title{
+	margin-top: 1rem;
+	font-size: 16px;
+}
+
+.subtitle.voise__casting__sub{
+	text-align: justify-all;
+	font-size: 14px;
+	line-height: 1.5;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+/* */
+
+/* Features Section */
+.voise__features__head{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.voise__features__columns{
+	padding-top: 1.50rem;
+	padding-bottom: 1.50rem;
+}
+
+.voise__features__bg{
+	display: block;
+	margin: auto;
+	width:54px;
+	height: 54px;
+	background: #06d763;
+	border-radius: 5px;
+}
+
+.voise__features__bg i {
+	position: relative;
+	top:20%;
+	color: #fff;
+	font-size: 30px;
+}
+
+.title.voise__features__title{
+	margin-top: 1rem;
+	font-size: 16px;
+}
+
+.subtitle.voise__features__sub{
+	text-align: justify-all;
+	font-size: 14px;
+	line-height: 1.5;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+/* */
+
+/* Project Section */
+.voise__project__head{
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.voise__project__columns{
+	padding-top: 1.50rem;
+	padding-bottom: 1.50rem;
+}
+
+.voise__project__content{
+	padding:1rem;
+	background: rgba(0,0,0,0.5);
+}
+
+.voise__project__title{
+	text-align: left;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	position: absolute;
+	bottom: 13px;
+}
+
+/* Testimonials Section */
+.voise__testimonial__head{
+	font-size: 24px;
+	font-weight: 500;
+}
+.voise__testimonial__quote{
+	padding:1.25rem;
+}
+
+img.voise__testimonial__brand{
+	display: block;
+	margin:auto;
+	width:50%;
+	padding-top:1.25rem;
+	padding-bottom:1.25rem;
+}
+
+.content.voise__testimonial__content{
+	margin-bottom: 0;
+}
+p.voise__testimonial__quote:before {
+  content: open-quote;
+}
+
+p.voise__testimonial__quote:after {
+  content: close-quote;
+}
+
+.slick-dots {
+    bottom: -9px !important;
+}
+/* Foot Section */
+.voise__foot{
+	background-image: url('../img/foot-flip.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.voise__foot .hero-body{
+	background: rgba(0,0,0,0.7);
+}
+
+.voise__foot__head{
+	font-size: 52px;
+	padding-bottom: 1rem;
+}
+
+.voise__foot_sub{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.8;
+	padding-bottom: 0.50rem;
+}
+
+.button.voise__foot__btn{
+	background-color: #047afd;
+	border: 1px solid #047afd;
+	padding-left: 1.50rem;
+	padding-right: 1.50rem;
+}
+
+.button.voise__foot__btn span{
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+/* Footer */
+.voise__footer{
+	padding:1rem;
+	background: #000;
+}
+
+.voise__footer__text{
+	color:#fff;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 500;
+}
